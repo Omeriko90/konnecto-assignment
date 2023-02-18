@@ -1,0 +1,152 @@
+<app-ui-preloader [display]="loading"></app-ui-preloader>
+<div [hidden]="loading" class="signup-page">
+  <div class="account-pages mt-5 mb-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6 col-xl-5">
+          <div class="card">
+            <div class="card-body p-4">
+              <!-- Logo-->
+              <div class="text-center w-75 m-auto">
+                <a routerLink="/account/login">
+                  <img
+                    src="https://us-konnecto-bucket.s3.amazonaws.com/konnecto_cspace_logo.png"
+                    alt=""
+                    height="50"
+                  />
+                </a>
+                <p class="text-muted mb-4 mt-3">
+                  Don't have an account? Create your own account, it takes less
+                  than a minute
+                </p>
+              </div>
+
+              <form
+                class="needs-validation"
+                name="signupForm"
+                [formGroup]="signupForm"
+                (ngSubmit)="onSubmit()"
+                novalidate
+              >
+                <app-ui-preloader [display]="loading"></app-ui-preloader>
+
+                <ngb-alert type="danger" *ngIf="error" [dismissible]="false">{{
+                  error
+                }}</ngb-alert>
+
+                <div class="form-group mb-3">
+                  <label for="name">Your name</label>
+
+                  <input
+                    type="text"
+                    formControlName="name"
+                    class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.name.errors }"
+                    id="name"
+                    placeholder="Enter your name"
+                  />
+
+                  <div
+                    *ngIf="submitted && f.name.errors"
+                    class="invalid-feedback"
+                  >
+                    <div
+                      id="name-required-error"
+                      *ngIf="f.name.errors.required"
+                    >
+                      Name is required
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="email">Email</label>
+
+                  <input
+                    type="email"
+                    formControlName="email"
+                    class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
+                    id="email"
+                    placeholder="Email"
+                  />
+
+                  <div
+                    *ngIf="submitted && f.email.errors"
+                    class="invalid-feedback"
+                  >
+                    <div
+                      id="email-required-error"
+                      *ngIf="f.email.errors.required"
+                    >
+                      Email is required
+                    </div>
+                    <div id="email-invalid-error" *ngIf="f.email.errors.email">
+                      Email must be a valid email address
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="password">Password</label>
+
+                  <input
+                    type="password"
+                    formControlName="password"
+                    class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.password.errors }"
+                    id="password"
+                    placeholder="Password"
+                  />
+
+                  <div
+                    *ngIf="submitted && f.password.errors"
+                    class="invalid-feedback"
+                  >
+                    <div
+                      id="password-required-error"
+                      *ngIf="f.password.errors.required"
+                    >
+                      Password is required
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group mb-0 text-center">
+                  <button class="btn btn-primary btn-block" type="submit">
+                    Sign Up
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!-- end card-body -->
+          </div>
+          <!-- end card -->
+
+          <div class="row mt-3">
+            <div class="col-12 text-center">
+              <p class="text-muted">
+                Already have account?
+                <a
+                  id="login-link"
+                  routerLink="/account/login"
+                  class="text-muted ml-1"
+                  ><b>Log In</b></a
+                >
+              </p>
+            </div>
+            <!-- end col-->
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end col -->
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end container -->
+  </div>
+</div>
+
+<footer class="fixed-bottom footer footer-alt center-text">
+  {{ year }} © Konnecto
+</footer>

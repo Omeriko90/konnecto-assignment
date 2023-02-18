@@ -1,0 +1,31 @@
+.chart-title {
+  font-size: 1em;
+  font-weight: 500;
+  font-family: "roboto";
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.demographic-data {
+  display: none;
+  &.visible {
+    display: flex;
+  }
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.segment-item {
+  white-space: normal;
+}
