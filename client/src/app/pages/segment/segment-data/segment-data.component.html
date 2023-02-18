@@ -1,0 +1,26 @@
+<h5>segment-data - {{ segmentData?.name }}</h5>
+
+<div
+  *ngIf="isLoading"
+  class="loading-container justify-content-center align-items-center"
+>
+  <div class="row mb-2">
+    <mat-spinner
+      id="loading-spinner"
+      color="primary"
+      diameter="60"
+    ></mat-spinner>
+  </div>
+  <div class="row">
+    <h4>Loading results please wait</h4>
+  </div>
+</div>
+
+<div [hidden]="isLoading">
+  <div class="col-sm-4">
+    <div class="row no-margin">
+      <span class="chart-title">Gender</span>
+    </div>
+    <canvas #demographicGenderChartCanvas id="gender-chart"></canvas>
+  </div>
+</div>

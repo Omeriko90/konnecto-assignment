@@ -1,0 +1,36 @@
+<h5>Segment list</h5>
+
+<form [formGroup]="form">
+  <mat-form-field class="col-sm-12" appearance="outline">
+    <mat-label>Search Segments</mat-label>
+    <input matInput formControlName="search" />
+    <mat-icon matSuffix> search </mat-icon>
+  </mat-form-field>
+</form>
+
+<div class="table-div">
+  <table
+    class="table table-striped table-hover table-bordered table-sm dataTable no-footer"
+  >
+    <thead class="bg-light">
+      <tr role="row">
+        <th class="odd">#</th>
+        <th *ngFor="let col of columnList" class="odd">{{ col.label }}</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let segment of segmentMetaDataList; let i = index">
+        <td>
+          <b>#{{ i + 1 }}</b>
+        </td>
+        <td
+          *ngFor="let col of columnList"
+          (click)="cellClicked(segment, col.key)"
+        >
+          {{ segment[col.key] }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

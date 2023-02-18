@@ -1,0 +1,15 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 13.5C13 14.3284 12.3284 15 11.5 15C10.6716 15 10 14.3284 10 13.5C10 12.6716 10.6716 12 11.5 12C12.3284 12 13 12.6716 13 13.5Z" fill="currentColor"/>
+<path d="M18 13.5C18 14.3284 17.3284 15 16.5 15C15.6716 15 15 14.3284 15 13.5C15 12.6716 15.6716 12 16.5 12C17.3284 12 18 12.6716 18 13.5Z" fill="currentColor"/>
+<path d="M23 13.5C23 14.3284 22.3284 15 21.5 15C20.6716 15 20 14.3284 20 13.5C20 12.6716 20.6716 12 21.5 12C22.3284 12 23 12.6716 23 13.5Z" fill="currentColor"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33333 9.4375H31.6667C32.1269 9.4375 32.5 9.80127 32.5 10.25V17H7.5V10.25C7.5 9.80127 7.8731 9.4375 8.33333 9.4375ZM5 20V17V10.25C5 8.45507 6.49238 7 8.33333 7H31.6667C33.5076 7 35 8.45507 35 10.25V17V20V29.75C35 31.5449 33.5076 33 31.6667 33H8.33333C6.49238 33 5 31.5449 5 29.75V20ZM32.5 20V29.75C32.5 30.1987 32.1269 30.5625 31.6667 30.5625H8.33333C7.8731 30.5625 7.5 30.1987 7.5 29.75V20H32.5Z" fill="currentColor"/>
+<defs>
+<radialGradient id="paint0_angular" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(19 23) rotate(109.885) scale(24.99)">
+<stop offset="0.1875" stop-color="white" stop-opacity="0.309524"/>
+<stop offset="0.536458" stop-color="white"/>
+<stop offset="0.68586" stop-color="white"/>
+<stop offset="0.756954" stop-color="white" stop-opacity="0"/>
+<stop offset="0.97699" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

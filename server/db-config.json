@@ -1,0 +1,10 @@
+{
+  "configConnectors": {
+    "default": {
+      "type": "mongo",
+      "config": {
+        "connectionURL": "env:MONGO_CONNECTION_STRING"
+      }
+    }
+  }
+}

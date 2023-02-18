@@ -1,0 +1,30 @@
+// colors
+$primary-blue: #1a83f4;
+$primary-light-grey: #ecf0f3;
+$light-grey-blue: #a7afb7;
+$primary-dark-grey: #a7afb7;
+$primary-pale-grey: #fafbfc;
+$primary-light-cyan: #aae8ff;
+$primary-light-tan: #ffeca7;
+$primary-pale-aqua: #bbf2db;
+$primary-pale-grey: #fafbfc;
+$primary-shadow: #dcdcdc;
+$primary-success: #66cca1;
+
+// text styles
+$text-color-primary: #1d1d20;
+$text-size-toolbar: 11px;
+
+.center-text {
+  text-align: center;
+}
+
+.right-text {
+  text-align: right;
+}
+
+.close-icon {
+  width: 16px;
+  cursor: pointer;
+  float: right;
+}

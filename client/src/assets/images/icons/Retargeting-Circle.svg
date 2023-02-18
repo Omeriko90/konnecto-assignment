@@ -1,0 +1,12 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10 15C11.6569 15 13 13.6569 13 12C13 10.3431 11.6569 9 10 9C8.34315 9 7 10.3431 7 12C7 13.6569 8.34315 15 10 15ZM16.2632 9C15.5655 9 15 9.51356 15 10.1471C15 10.7806 15.5655 11.2941 16.2632 11.2941H17.9474C23.7609 11.2941 28.4737 15.5737 28.4737 20.8529C28.4737 21.4864 29.0392 22 29.7368 22C30.4345 22 31 21.4864 31 20.8529C31 14.3067 25.1561 9 17.9474 9H16.2632ZM21.8158 31C22.4698 31 23 30.4124 23 29.6875C23 28.9626 22.4698 28.375 21.8158 28.375H19.4474C14.4332 28.375 10.3684 23.8699 10.3684 18.3125C10.3684 17.5876 9.83823 17 9.18421 17C8.53019 17 8 17.5876 8 18.3125C8 25.3196 13.1252 31 19.4474 31H21.8158ZM31 28C31 29.6569 29.6569 31 28 31C26.3431 31 25 29.6569 25 28C25 26.3431 26.3431 25 28 25C29.6569 25 31 26.3431 31 28Z" fill="currentColor"/>
+<defs>
+<radialGradient id="paint0_angular" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(19 20) rotate(102.848) scale(29.2318)">
+<stop offset="0.1875" stop-color="white" stop-opacity="0.309524"/>
+<stop offset="0.536458" stop-color="white"/>
+<stop offset="0.871116" stop-color="white"/>
+<stop offset="0.895964" stop-color="white" stop-opacity="0"/>
+<stop offset="0.97699" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

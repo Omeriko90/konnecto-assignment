@@ -1,0 +1,88 @@
+{
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "cli": {
+        "analytics": "e8c90b64-ee0b-4cd9-af86-8c7d966d388f"
+    },
+    "version": 1,
+    "newProjectRoot": "projects",
+    "projects": {
+        "assignment": {
+            "projectType": "application",
+            "schematics": {
+                "@schematics/angular:component": {
+                    "style": "scss"
+                }
+            },
+            "root": "",
+            "sourceRoot": "src",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-angular:browser",
+                    "options": {
+                        "outputPath": "dist/client",
+                        "index": "src/index.html",
+                        "main": "src/main.ts",
+                        "polyfills": "src/polyfills.ts",
+                        "tsConfig": "tsconfig.app.json",
+                        "aot": true,
+                        "assets": ["src/favicon.ico", "src/assets"],
+                        "styles": [
+                            "node_modules/bootstrap/dist/css/bootstrap.css",
+                            "node_modules/pace-js/templates/pace-theme-flash.tmpl.css",
+                            "src/app/@theme/styles/styles.scss",
+                            "src/styles.scss"
+                        ],
+                        "scripts": ["node_modules/pace-js/pace.min.js"],
+                        "allowedCommonJsDependencies": ["lodash"]
+                    },
+                    "configurations": {
+                        "production": {
+                            "budgets": [
+                                {
+                                    "type": "anyComponentStyle",
+                                    "maximumWarning": "6kb"
+                                }
+                            ],
+                            "optimization": true,
+                            "outputHashing": "all",
+                            "sourceMap": false,
+                            "extractCss": true,
+                            "namedChunks": false,
+                            "aot": true,
+                            "extractLicenses": true,
+                            "vendorChunk": false,
+                            "buildOptimizer": true,
+                            "fileReplacements": [
+                                {
+                                    "replace": "src/environments/environment.ts",
+                                    "with": "src/environments/environment.prod.ts"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "serve": {
+                    "builder": "@angular-devkit/build-angular:dev-server",
+                    "options": {
+                        "browserTarget": "assignment:build",
+                        "proxyConfig": "proxy.conf.json",
+                        "port": 4208,
+                        "disableHostCheck": true
+                    },
+                    "configurations": {
+                        "production": {
+                            "browserTarget": "assignment:build:production"
+                        }
+                    }
+                },
+                "extract-i18n": {
+                    "builder": "@angular-devkit/build-angular:extract-i18n",
+                    "options": {
+                        "browserTarget": "assignment:build"
+                    }
+                }
+            }
+        }
+    },
+    "defaultProject": "assignment"
+}
